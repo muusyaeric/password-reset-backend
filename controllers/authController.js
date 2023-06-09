@@ -63,7 +63,7 @@ router.post('/forgot-password', async (req, res) => {
 
         const secret = process.env.TOKEN_SECRET + user.password
         const token = jwt.sign({ email: user.email, id: user._id }, secret)
-        const link = `https://password-reset-api-b2a7.onrender.com/api/user/reset-password/${user._id}/${token}`
+        const link = `https://password-reset-bu5f.onrender.com/reset-password/${user._id}/${token}`
         // const link = `http://localhost:3000/reset-password/${user._id}/${token}`
 
         const config = {
