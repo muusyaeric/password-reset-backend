@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT
+// const PORT = 5000
 const cors = require('cors')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
