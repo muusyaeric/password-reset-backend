@@ -127,6 +127,7 @@ router.get('/reset-password/:id/:token', async (req, res) => {
         return res.status(200).send("Verified.")
     } catch (error) {
         return res.send(error)
+        console.log(error);
     }
 })
 
